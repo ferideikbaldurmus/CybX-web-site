@@ -1,0 +1,20 @@
+header {
+    background-color: #04182F;
+    color: #DDDDDD;
+
+    ul {
+        list-style: none;
+
+        &.left-menu {
+            list-style: disc;
+            li {          
+                &::marker {
+                    color: #0DC9AC; 
+                  }
+            }
+        }
+        span{
+            color: #0CBFA3;
+        }
+    }
+}

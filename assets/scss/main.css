@@ -1,0 +1,16 @@
+header {
+  background-color: #04182F;
+  color: #DDDDDD;
+}
+header ul {
+  list-style: none;
+}
+header ul.left-menu {
+  list-style: disc;
+}
+header ul.left-menu li::marker {
+  color: #0DC9AC;
+}
+header ul span {
+  color: #0CBFA3;
+}/*# sourceMappingURL=main.css.map */
