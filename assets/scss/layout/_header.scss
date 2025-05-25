@@ -4,6 +4,31 @@ header {
     font-family: $global-font-family;
     font-size: 14px;
 
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .left-side {
+        flex: 0 0 40%;
+        display: flex;
+        gap: 20px;
+        margin-left: -65px;
+    }
+
+    .right-side {
+        flex: 0 0 70%; 
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     ul {
         list-style: none;
 
@@ -21,7 +46,25 @@ header {
             color: #0CBFA3;
         }
 
-    
+        li {
+            cursor: pointer;
+        }
     }
 
+    .info-menu li {
+        position: relative;
+        padding: 0 5px;
+
+        &:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1.4px;
+            height: 20px;
+            background-color: #fff;
+        }
+
+    }
 }
