@@ -288,4 +288,71 @@ header .info-menu li:not(:last-child)::after {
   width: 1.4px;
   height: 20px;
   background-color: #fff;
+}
+
+.about-area {
+  background-color: #011327;
+  display: flex;
+  gap: 60px;
+  padding: 120px 0px;
+}
+.about-area .left-area {
+  position: relative;
+  width: 400px;
+  height: 450px;
+}
+.about-area .left-area img {
+  position: absolute;
+  object-fit: cover;
+}
+.about-area .left-area img:nth-child(1) {
+  width: 500px;
+  height: 625px;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.about-area .left-area img:nth-child(2) {
+  width: 400px;
+  height: 472px;
+  bottom: 50px;
+  left: 215px;
+  z-index: 2;
+  top: 90px;
+}
+.about-area .right-area {
+  flex: 1;
+  padding: 10px 35px;
+  z-index: 3;
+  margin-top: -200px;
+}
+.about-area .right-area .section-heading span {
+  color: #09AB95;
+  font-size: 18px;
+  font-weight: 800;
+}
+.about-area .right-area .section-heading h1 {
+  color: #D5D7DA;
+  font-size: 50px;
+  font-weight: 800;
+}
+.about-area .right-area .section-heading p {
+  color: #B9BBBE;
+  font-size: 16px;
+  width: 600px;
+}
+.about-area .right-area .about-keypoints p {
+  padding: 10px 20px;
+  width: 450px;
+  background-color: #04182F;
+}
+.about-area .right-area .about-keypoints p:first-child {
+  width: 390px;
+}
+.about-area .right-area .about-keypoints p .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #09AB95;
+  border-radius: 50%;
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */
