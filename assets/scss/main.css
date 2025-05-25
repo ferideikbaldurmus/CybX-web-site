@@ -110,16 +110,127 @@ nav .navbar-actions .btn-get-started:hover::before {
 
 .hero {
   background-color: #011327;
-  height: 200px;
+  padding: 100px 0px 120px;
 }
 .hero .hero-title {
   font-size: 90px;
   color: #fff;
+  font-weight: 800;
 }
 .hero .hero-title .h1-img {
   border-radius: 100px;
   width: 160px;
   height: 73px;
+}
+.hero .play-button {
+  position: relative;
+  background-color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: visible;
+}
+.hero .play-button i {
+  font-size: 45px;
+  color: #11C8AB;
+  position: relative;
+  z-index: 2;
+}
+.hero .play-button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(144, 148, 152, 0.7);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  animation: pulseCircle 2s infinite ease-out;
+  z-index: 0;
+}
+@keyframes pulseCircle {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+}
+.hero .hero-main-photo img {
+  width: 1272px;
+  height: 700px;
+  object-fit: cover;
+}
+.hero .hero-banner {
+  background-color: #0DC9AC;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.hero .hero-banner .banner-text {
+  display: inline-block;
+  padding: 15px 0;
+  color: #fff;
+  font-weight: 800;
+  font-weight: bold;
+  animation: slideText 25s linear infinite;
+  font-size: 50px;
+}
+@keyframes slideText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.hero .hero-background {
+  position: relative;
+  width: 50px;
+  perspective: 1000px;
+}
+.hero .hero-background img {
+  width: 100%;
+  height: auto;
+  transform-style: preserve-3d;
+}
+.hero .hero-background img:nth-child(1) {
+  animation: spinYReverse 5s linear infinite;
+  filter: grayscale(1) brightness(0) saturate(100%) invert(23%) sepia(23%) saturate(415%) hue-rotate(163deg) brightness(83%) contrast(90%);
+}
+.hero .hero-background img:nth-child(2) {
+  animation: spinXReverse 5s linear infinite;
+  margin-left: 900px;
+  margin-top: -200px;
+}
+@keyframes spinYReverse {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes spinXReverse {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(-360deg);
+  }
 }
 
 header {
