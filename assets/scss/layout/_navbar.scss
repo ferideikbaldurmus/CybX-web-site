@@ -1,7 +1,7 @@
 nav {
+    position: relative;
     background-color: #011327;
     font-family: $global-font-family;
-
     padding: 20px;
     border-bottom: 1px solid #223142;
 
@@ -25,10 +25,12 @@ nav {
     }
 
     .navbar-menu {
+        position: relative;
 
         li {
             font-size: 16px;
             cursor: pointer;
+            position: relative;
 
             span {
                 color: #616AF9;
@@ -39,17 +41,66 @@ nav {
                 color: #fff;
                 padding: 20px;
                 transition: color 0.3s ease;
+
                 &:hover {
                     color: #616AF9;
                 }
             }
 
+            &:hover,
+            &:focus-within {
+                .dropdown-menu {
+                    display: block;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -40px;
+                    height: 40px;
+                    pointer-events: auto;
+                }
+            }
+
+            .dropdown-menu {
+                position: absolute;
+                top: calc(100% + 40px);
+                left: 0;
+                background-color: #fff;
+                list-style: none;
+                padding: 10px 0;
+                display: none;
+                min-width: 180px;
+                z-index: 10;
+                border: none;
+                border-radius: 0;
+
+                li {
+                    a {
+                        color: #000;
+                        padding: 10px 20px;
+                        display: block;
+                        text-decoration: none;
+                        transition: color 0.3s ease;
+                        white-space: nowrap;
+                        &:hover {
+                            color: #616AF9;
+                        }
+                    }
+                    // &:nth-child(2) a {
+                    //     color: #616AF9;
+                    //   }
+                 
+                }
+            }
         }
     }
 
     .navbar-actions {
         i {
-            font-size: 23px;
+            font-size: 24px;
             color: #fff;
         }
 

@@ -1,4 +1,5 @@
 nav {
+  position: relative;
   background-color: #011327;
   font-family: "Lexend", sans-serif;
   padding: 20px;
@@ -18,9 +19,13 @@ nav .navbar-logo img {
   width: 120px;
   height: 67px;
 }
+nav .navbar-menu {
+  position: relative;
+}
 nav .navbar-menu li {
   font-size: 16px;
   cursor: pointer;
+  position: relative;
 }
 nav .navbar-menu li span {
   color: #616AF9;
@@ -34,8 +39,44 @@ nav .navbar-menu li a {
 nav .navbar-menu li a:hover {
   color: #616AF9;
 }
+nav .navbar-menu li:hover .dropdown-menu, nav .navbar-menu li:focus-within .dropdown-menu {
+  display: block;
+}
+nav .navbar-menu li:hover::after, nav .navbar-menu li:focus-within::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  pointer-events: auto;
+}
+nav .navbar-menu li .dropdown-menu {
+  position: absolute;
+  top: calc(100% + 40px);
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px 0;
+  display: none;
+  min-width: 180px;
+  z-index: 10;
+  border: none;
+  border-radius: 0;
+}
+nav .navbar-menu li .dropdown-menu li a {
+  color: #000;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+nav .navbar-menu li .dropdown-menu li a:hover {
+  color: #616AF9;
+}
 nav .navbar-actions i {
-  font-size: 23px;
+  font-size: 24px;
   color: #fff;
 }
 nav .navbar-actions .btn-get-started {
@@ -70,6 +111,15 @@ nav .navbar-actions .btn-get-started:hover::before {
 .hero {
   background-color: #011327;
   height: 200px;
+}
+.hero .hero-title {
+  font-size: 90px;
+  color: #fff;
+}
+.hero .hero-title .h1-img {
+  border-radius: 100px;
+  width: 160px;
+  height: 73px;
 }
 
 header {

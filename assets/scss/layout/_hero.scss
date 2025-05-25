@@ -1,4 +1,13 @@
 .hero{
     background-color: #011327;
     height: 200px;
+    .hero-title{
+        font-size: 90px;
+        color: #fff;
+        .h1-img{
+            border-radius: 100px;
+            width: 160px;
+            height: 73px;
+        }
+    }
 }
