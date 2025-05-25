@@ -66,19 +66,20 @@
                      padding: 10px 20px;
                      width: 450px;
                      background-color: #04182F;
-         
-                  
+                     margin-left: 50px;
+
                      &:first-child {
                          width: 390px;
                      }
+
                      .circle {
-                
-                        width: 10px;
-                        height: 10px;
-                        background-color: #09AB95;
-                        border-radius: 50%;
-                        display: inline-block;
-                      }
+
+                         width: 10px;
+                         height: 10px;
+                         background-color: #09AB95;
+                         border-radius: 50%;
+                         display: inline-block;
+                     }
                  }
              }
          }

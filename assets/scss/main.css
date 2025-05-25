@@ -345,6 +345,7 @@ header .info-menu li:not(:last-child)::after {
   padding: 10px 20px;
   width: 450px;
   background-color: #04182F;
+  margin-left: 50px;
 }
 .about-area .right-area .about-keypoints p:first-child {
   width: 390px;
