@@ -1,20 +1,42 @@
 header {
     background-color: #04182F;
     color: #DDDDDD;
+    font-family: $global-font-family;
 
     ul {
         list-style: none;
 
         &.left-menu {
             list-style: disc;
-            li {          
+
+            li {
                 &::marker {
-                    color: #0DC9AC; 
-                  }
+                    color: #0DC9AC;
+                }
             }
         }
-        span{
+
+        span {
             color: #0CBFA3;
         }
+
+        .info-menu {
+            li {
+              position: relative;
+              padding: 0 10px;
+        
+              &:not(:last-child)::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 2px;
+                height: 20px;
+                background-color: #fff;
+              }
+            }
+          }
     }
+
 }

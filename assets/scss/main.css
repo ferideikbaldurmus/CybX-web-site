@@ -1,6 +1,7 @@
 header {
   background-color: #04182F;
   color: #DDDDDD;
+  font-family: "Lexend", sans-serif;
 }
 header ul {
   list-style: none;
@@ -13,4 +14,18 @@ header ul.left-menu li::marker {
 }
 header ul span {
   color: #0CBFA3;
+}
+header ul .info-menu li {
+  position: relative;
+  padding: 0 10px;
+}
+header ul .info-menu li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 20px;
+  background-color: #fff;
 }/*# sourceMappingURL=main.css.map */
