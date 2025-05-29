@@ -1,0 +1,60 @@
+.our-features {
+    background-color: #011327;
+    font-family: $global-font-family;
+
+    .card {
+        position: relative;
+        overflow: hidden;
+        border: none;
+        background-color: #04182F;
+        transition: all 0.4s ease;
+        z-index: 1;
+
+        &:hover {
+            background-position: right;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #616AF9, #0EC9AC);
+            z-index: 0;
+            transition: width 0.5s ease;
+        }
+        * {
+            position: relative;
+            z-index: 1;
+          }
+        &:hover::before {
+            width: 100%;
+        }
+
+        h4 {
+            color: #FFFFFF;
+        }
+
+        p {
+            color: #DDDDDD;
+            font-size: 16px;
+        }
+    }
+
+    .our-features-title {
+        h3 {
+            color: $font-color-green;
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        h1 {
+            width: 35rem;
+            font-weight: 800;
+            font-size: 46px;
+            margin: 0 auto;
+        }
+    }
+}

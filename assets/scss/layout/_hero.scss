@@ -29,7 +29,7 @@
   
     i {
       font-size: 45px;
-      color: #11C8AB;
+      color: $font-color-green;
       position: relative;
       z-index: 2;
     }
@@ -72,7 +72,7 @@
         }
     }
     .hero-banner {
-        background-color: #0DC9AC;
+        background-color: $font-color-green;
         overflow: hidden;
         white-space: nowrap;
         position: relative;

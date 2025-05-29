@@ -1,3 +1,7 @@
+body {
+  background-color: #021327;
+}
+
 nav {
   position: relative;
   background-color: #011327;
@@ -137,7 +141,7 @@ nav .navbar-actions .btn-get-started:hover::before {
 }
 .hero .play-button i {
   font-size: 45px;
-  color: #11C8AB;
+  color: #0DC9AC;
   position: relative;
   z-index: 2;
 }
@@ -331,7 +335,7 @@ header .info-menu li:not(:last-child)::after {
   margin-left: 100px;
 }
 .about-area .right-area .section-heading span {
-  color: #09AB95;
+  color: #0DC9AC;
   font-size: 18px;
   font-weight: 800;
 }
@@ -417,4 +421,56 @@ header .info-menu li:not(:last-child)::after {
   color: #616AF9;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+.our-features {
+  background-color: #011327;
+  font-family: "Lexend", sans-serif;
+}
+.our-features .card {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: #04182F;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+.our-features .card:hover {
+  background-position: right;
+}
+.our-features .card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #616AF9, #0EC9AC);
+  z-index: 0;
+  transition: width 0.5s ease;
+}
+.our-features .card * {
+  position: relative;
+  z-index: 1;
+}
+.our-features .card:hover::before {
+  width: 100%;
+}
+.our-features .card h4 {
+  color: #FFFFFF;
+}
+.our-features .card p {
+  color: #DDDDDD;
+  font-size: 16px;
+}
+.our-features .our-features-title h3 {
+  color: #0DC9AC;
+  font-size: 18px;
+  font-weight: 800;
+}
+.our-features .our-features-title h1 {
+  width: 35rem;
+  font-weight: 800;
+  font-size: 46px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
