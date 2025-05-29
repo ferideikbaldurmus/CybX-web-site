@@ -25,13 +25,28 @@
             z-index: 0;
             transition: width 0.5s ease;
         }
+
         * {
             position: relative;
             z-index: 1;
-          }
+        }
+
         &:hover::before {
             width: 100%;
         }
+
+        .card-img-top {
+            width: 240px;
+            height: 240px;
+            object-fit: contain;
+          }
+          
+          @media (min-width: 768px) {
+            .card-img-top {
+              width: 270px;
+              height: 270px;
+            }
+          }
 
         h4 {
             color: #FFFFFF;
@@ -54,6 +69,8 @@
             width: 35rem;
             font-weight: 800;
             font-size: 46px;
+            margin: 0 auto;
+            font-size: clamp(25px, 5vw, 46px);
             margin: 0 auto;
         }
     }
