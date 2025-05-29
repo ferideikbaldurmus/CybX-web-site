@@ -41,14 +41,14 @@
                 color: #F5F6F7;
                 width: 60px;
                 height: 60px;
-                transition: transform 0.3s ease;
-             
-                &:hover {
-                    background-color: #616AF9;
-                    transition: all 0.4s ease;
-                }
+                transition: all 0.3s ease;
+            }
+
+            &:hover {
                 .service-icon-left {
                     transform: scale(1.1);
+                    background-color: #616AF9;
+                    color: #fff;
                 }
             }
 
@@ -121,31 +121,64 @@
                 transition: all 0.3s ease;
             }
         }
-
-        @media (max-width: 768px) {
-            .services-list {
-                .service-item {
-                    flex-direction: column;
-                    text-align: center;
-
-                    // .btn{
-                    //     width: 40px;
-                    //     height: 40px;
-                    // }
-                    .service-hover-img {
-                        display: none;
-                    }
-
-                    .col-12 {
-                        text-align: center !important;
-                        justify-content: center;
-                    }
-
-                }
-            }
-        }
-
-
     }
 
+    @media (max-width: 768px) {
+        .services-list {
+            .service-item {
+                // h4{
+                //     margin-top: 90px;
+                //     margin-left: -60px;
+                //   }
+                //   p{
+                //     margin-left: -60px;
+                //   }
+                .btn {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s ease;
+
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+
+                &:hover {
+                    .btn {
+                        transform: scale(1.05);
+                    }
+                }
+
+                .service-icon-left {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.3s ease;
+                    svg {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+
+                &:hover {
+                    .service-icon-left {
+                        transform: scale(1.05);
+                    }
+                }
+
+                .service-hover-img {
+                    display: none;
+                }
+
+
+
+            }
+        }
+    }
 }
