@@ -488,6 +488,9 @@ header .info-menu li:not(:last-child)::after {
   margin: 0 auto;
 }
 
+.our-services {
+  overflow-x: hidden;
+}
 .our-services .our-services-title h3 {
   color: #0DC9AC;
   font-size: 18px;
