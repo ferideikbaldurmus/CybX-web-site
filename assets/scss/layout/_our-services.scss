@@ -48,7 +48,7 @@
             &:hover {
                 .service-icon-left {
                     transform: scale(1.1);
-                    background-color: #616AF9;
+                    background-color: $font-color-purple;
                     color: #fff;
                 }
             }
@@ -64,7 +64,7 @@
                 }
 
                 .btn {
-                    background-color: #616AF9;
+                    background-color: $font-color-purple;
                     color: #fff;
                 }
 
@@ -111,14 +111,14 @@
 
         &:hover {
             .service-icon-left {
-                background-color: #616AF9;
+                background-color: $font-color-purple;
                 color: #fff;
                 transition: all 0.3s ease;
             }
 
             .btn {
                 background-color: $font-color-green;
-                color: #616AF9;
+                color: $font-color-purple;
                 transition: all 0.3s ease;
             }
         }
