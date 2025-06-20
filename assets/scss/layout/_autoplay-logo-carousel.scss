@@ -11,7 +11,7 @@
     border: 1px solid transparent;
 
     &:hover {
-        border: 1px solid #0C1D31;
+        border: 1px solid $font-color-green;
         transform: translateY(-8px);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }

@@ -747,7 +747,7 @@ header .info-menu li:not(:last-child)::after {
   border: 1px solid transparent;
 }
 .partner-logo:hover {
-  border: 1px solid #0C1D31;
+  border: 1px solid #0DC9AC;
   transform: translateY(-8px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -799,4 +799,96 @@ header .info-menu li:not(:last-child)::after {
   100% {
     opacity: 0;
   }
+}
+.why-choose-us .image-wrap {
+  height: 90vh;
+}
+.why-choose-us .image-wrap img {
+  height: 100%;
+  object-fit: cover;
+}
+.why-choose-us .content-wrap {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.why-choose-us .title {
+  color: #0DC9AC;
+  font-size: 18px;
+}
+.why-choose-us .feature-box .morph-icon {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border: 1.5px solid #616AF9;
+  background-color: #04182F;
+  animation: borderMorph 6s ease-in-out infinite alternate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.why-choose-us .feature-box .morph-icon img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  pointer-events: none;
+}
+@keyframes borderMorph {
+  0% {
+    border-top-right-radius: 57.201% 61.9993%;
+    border-bottom-left-radius: 49.1989% 51%;
+    border-bottom-right-radius: 50.8011% 38.0007%;
+    border-top-left-radius: 42.799% 49%;
+  }
+  12.5% {
+    border-top-right-radius: 52.3765% 59.7585%;
+    border-bottom-left-radius: 49.618% 63.09%;
+    border-bottom-right-radius: 50.382% 40.2415%;
+    border-top-left-radius: 47.6235% 36.91%;
+  }
+  25% {
+    border-top-right-radius: 44.6037% 59.1697%;
+    border-bottom-left-radius: 49.8111% 37.132%;
+    border-bottom-right-radius: 50.1889% 40.8303%;
+    border-top-left-radius: 55.3963% 62.868%;
+  }
+  37.5% {
+    border-top-right-radius: 47.04% 69.2571%;
+    border-bottom-left-radius: 60.8114% 51%;
+    border-bottom-right-radius: 39.1886% 30.7429%;
+    border-top-left-radius: 52.96% 49%;
+  }
+  50% {
+    border-top-right-radius: 48.468% 68.2371%;
+    border-bottom-left-radius: 59.1794% 51%;
+    border-bottom-right-radius: 40.8206% 31.7629%;
+    border-top-left-radius: 51.532% 49%;
+  }
+  62.5% {
+    border-top-right-radius: 37.1371% 48.1048%;
+    border-bottom-left-radius: 46.0322% 45.1613%;
+    border-bottom-right-radius: 53.9678% 51.8952%;
+    border-top-left-radius: 62.8629% 54.8387%;
+  }
+  75% {
+    border-top-right-radius: 39% 42.542%;
+    border-bottom-left-radius: 40.458% 35.5935%;
+    border-bottom-right-radius: 59.542% 57.458%;
+    border-top-left-radius: 61% 64.4065%;
+  }
+  87.5% {
+    border-top-right-radius: 38.5821% 48.8254%;
+    border-bottom-left-radius: 46% 45.4127%;
+    border-bottom-right-radius: 54% 51.1746%;
+    border-top-left-radius: 61.4179% 54.5873%;
+  }
+  100% {
+    border-top-right-radius: 57.201% 61.9993%;
+    border-bottom-left-radius: 49.1989% 51%;
+    border-bottom-right-radius: 50.8011% 38.0007%;
+    border-top-left-radius: 42.799% 49%;
+  }
+}
+.why-choose-us .feature-box p {
+  color: #DDDDDD;
 }/*# sourceMappingURL=main.css.map */
