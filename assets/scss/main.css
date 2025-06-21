@@ -800,6 +800,9 @@ header .info-menu li:not(:last-child)::after {
     opacity: 0;
   }
 }
+.why-choose-us {
+  font-family: "Lexend", sans-serif;
+}
 .why-choose-us .image-wrap {
   height: 90vh;
 }
@@ -891,4 +894,46 @@ header .info-menu li:not(:last-child)::after {
 }
 .why-choose-us .feature-box p {
   color: #DDDDDD;
+}
+
+.testimonials {
+  font-family: "Lexend", sans-serif;
+}
+.testimonials .testimonials-title h5 {
+  color: #0DC9AC;
+  font-size: 18px;
+}
+.testimonials .testimonials-title h1 {
+  font-size: clamp(25px, 5vw, 45px);
+}
+.testimonials .testimonials-content .testimonial-text {
+  color: #DDDDDD;
+  font-size: 22px;
+}
+.testimonials .testimonials-content .testimonial-user h6 {
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.testimonials .testimonials-content .testimonial-user h6:hover {
+  color: #616AF9;
+}
+.testimonials .testimonials-content .testimonial-user img {
+  width: 80px;
+  height: 80px;
+}
+.testimonials .testimonials-content .testimonial-controls {
+  margin-left: auto;
+  display: flex;
+}
+.testimonials .testimonials-content .testimonial-controls .btn-control {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.testimonials .testimonials-content .testimonial-controls .btn-control:hover {
+  background-color: #616AF9;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
