@@ -936,4 +936,104 @@ header .info-menu li:not(:last-child)::after {
 .testimonials .testimonials-content .testimonial-controls .btn-control:hover {
   background-color: #616AF9;
   color: #ffffff;
+}
+
+.faqs {
+  font-family: "Lexend", sans-serif;
+}
+.faqs .faqs-title h5 {
+  color: #0DC9AC;
+  font-size: 18px;
+}
+.faqs .faqs-title h1 {
+  font-size: clamp(25px, 5vw, 46px);
+}
+.faqs .accordion-button {
+  position: relative;
+  padding-right: 50px;
+  background-color: #04182E;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 20px;
+}
+.faqs .accordion-button::after {
+  display: none !important;
+}
+.faqs .accordion-button:focus {
+  box-shadow: none;
+}
+.faqs .accordion-button .icon {
+  stroke: #DDDFE1;
+  transition: stroke 0.3s ease, border-color 0.3s ease;
+}
+.faqs .accordion-button .icon-plus,
+.faqs .accordion-button .icon-minus {
+  border: 2px solid #0DC9AC;
+  border-radius: 50%;
+  padding: 2px;
+  box-sizing: content-box;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.faqs .accordion-button .icon-plus {
+  display: inline-block;
+}
+.faqs .accordion-button .icon-minus {
+  display: none;
+}
+.faqs .accordion-button.collapsed .icon-plus {
+  display: inline-block;
+  stroke: #DDDFE1;
+  border-color: white;
+}
+.faqs .accordion-button.collapsed .icon-minus {
+  display: none;
+}
+.faqs .accordion-button:not(.collapsed) {
+  border-color: #0DC9AC;
+}
+.faqs .accordion-button:not(.collapsed) .icon-plus {
+  display: none;
+}
+.faqs .accordion-button:not(.collapsed) .icon-minus {
+  display: inline-block;
+  stroke: #0DC9AC;
+  border-color: #0DC9AC;
+}
+.faqs .accordion-body {
+  background-color: #04182E;
+  padding: 1rem 1.25rem;
+  position: relative;
+  font-size: 16px;
+}
+.faqs .accordion-body::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #243851;
+}
+.faqs .accordion-item {
+  position: relative;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.faqs .accordion-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #1B2A3B;
+}
+.faqs .accordion-item.active::after {
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */
