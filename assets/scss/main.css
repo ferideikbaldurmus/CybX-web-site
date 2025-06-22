@@ -1135,4 +1135,38 @@ header .info-menu li:not(:last-child)::after {
     transform: translate(-50%, -50%) scale(2.2);
     opacity: 0;
   }
+}
+.count-content {
+  font-family: "Lexend", sans-serif;
+}
+.count-content svg {
+  color: #F5F6F7;
+}
+.count-content .container {
+  background-color: #04182F;
+  padding: 1rem 1rem;
+}
+.count-content .logo {
+  width: 70px;
+  height: 70px;
+  background-color: #0DC9AC;
+}
+.count-content .count-number {
+  color: #F5F6F7;
+  font-size: clamp(28px, 4vw, 40px);
+}
+.count-content .count-text {
+  color: #D5D5D6;
+}
+@media (max-width: 767.98px) {
+  .count-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .count-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
