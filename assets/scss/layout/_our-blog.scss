@@ -1,0 +1,82 @@
+.our-blog {
+    font-family: $global-font-family;
+
+    .our-blog-title {
+        h5 {
+            color: $font-color-green;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: clamp(25px, 5vw, 46px);
+        }
+    }
+
+    .card {
+        background-color: #04182F;
+        transition: all 0.4s ease;
+
+        .card-img-wrapper {
+            overflow: hidden;
+
+            img {
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+        }
+
+        .card:hover .card-img-wrapper img {
+            transform: scale(1.03);
+        }
+
+        img {
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        &:hover {
+            border: 1px solid $font-color-green;
+            transition: all 0.4s ease;
+            transform: translateY(-8px);
+
+            img {
+                transform: scale(1.02);
+            }
+        }
+
+        svg {
+            color: $font-color-green;
+            font-size: 16px;
+        }
+
+        .logo {
+            span {
+                color: #DCDCDC;
+                font-size: 16px;
+            }
+
+            &:first-of-type span {
+                cursor: pointer;
+            }
+
+            &:not(:first-of-type) span {
+                cursor: default;
+            }
+        }
+
+        h5 {
+            color: #FEFEFE;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $font-color-green;
+                transition: all 0.3s ease;
+            }
+        }
+
+        p {
+            color: #DCDCDC;
+            font-size: 14px;
+        }
+    }
+}

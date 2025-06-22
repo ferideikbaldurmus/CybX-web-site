@@ -1169,4 +1169,68 @@ header .info-menu li:not(:last-child)::after {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.our-blog {
+  font-family: "Lexend", sans-serif;
+}
+.our-blog .our-blog-title h5 {
+  color: #0DC9AC;
+  font-size: 18px;
+}
+.our-blog .our-blog-title h1 {
+  font-size: clamp(25px, 5vw, 46px);
+}
+.our-blog .card {
+  background-color: #04182F;
+  transition: all 0.4s ease;
+}
+.our-blog .card .card-img-wrapper {
+  overflow: hidden;
+}
+.our-blog .card .card-img-wrapper img {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.our-blog .card .card:hover .card-img-wrapper img {
+  transform: scale(1.03);
+}
+.our-blog .card img {
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.our-blog .card:hover {
+  border: 1px solid #0DC9AC;
+  transition: all 0.4s ease;
+  transform: translateY(-8px);
+}
+.our-blog .card:hover img {
+  transform: scale(1.02);
+}
+.our-blog .card svg {
+  color: #0DC9AC;
+  font-size: 16px;
+}
+.our-blog .card .logo span {
+  color: #DCDCDC;
+  font-size: 16px;
+}
+.our-blog .card .logo:first-of-type span {
+  cursor: pointer;
+}
+.our-blog .card .logo:not(:first-of-type) span {
+  cursor: default;
+}
+.our-blog .card h5 {
+  color: #FEFEFE;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.our-blog .card h5:hover {
+  color: #0DC9AC;
+  transition: all 0.3s ease;
+}
+.our-blog .card p {
+  color: #DCDCDC;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */
