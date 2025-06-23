@@ -241,7 +241,7 @@ nav .navbar-actions .btn-get-started:hover::before {
   }
 }
 
-footer {
+.footer {
   font-family: "Lexend", sans-serif;
   background-image: url(/images/footer-bg.jpg);
   background-size: cover;
@@ -253,7 +253,7 @@ footer {
   overflow: hidden;
   padding: 4rem 0;
 }
-footer .footer-shape {
+.footer .footer-shape {
   position: absolute;
   top: 85px;
   right: 10%;
@@ -272,67 +272,67 @@ footer .footer-shape {
     transform: translateY(-50%) rotate(360deg);
   }
 }
-footer .overlay {
+.footer .overlay {
   background-color: rgba(2, 19, 39, 0.92);
   position: absolute;
   inset: 0;
   z-index: 0;
 }
-footer .container {
+.footer .container {
   position: relative;
   z-index: 1;
 }
 @media (max-width: 768px) {
-  footer strong {
+  .footer strong {
     font-size: 14px;
   }
 }
-footer p {
+.footer p {
   transition: all 0.5s ease;
   color: #DCDCDC;
   cursor: pointer;
 }
-footer p:hover {
+.footer p:hover {
   color: #616AF9;
 }
-footer p a {
+.footer p a {
   color: #DCDCDC;
   text-decoration: none;
   transition: color 0.5s ease;
 }
-footer p a:hover {
+.footer p a:hover {
   color: #616AF9;
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  footer p {
+  .footer p {
     font-size: 14px;
   }
 }
-footer .col-lg-3:last-child p:first-of-type {
+.footer .col-lg-3:last-child p:first-of-type {
   cursor: default;
 }
-footer .col-lg-3:last-child p:first-of-type:hover {
+.footer .col-lg-3:last-child p:first-of-type:hover {
   color: #DCDCDC;
 }
-footer svg {
+.footer svg {
   color: #0DC9AC;
   margin-right: 0.5rem;
 }
 @media (max-width: 768px) {
-  footer svg {
+  .footer svg {
     width: 18px;
     height: 18px;
     margin-right: 0.25rem;
   }
 }
-footer .footer-img {
+.footer .footer-img {
   width: 120px;
   height: 67px;
   object-fit: contain;
   display: block;
 }
-footer .icon-box {
+.footer .icon-box {
   width: 45px;
   height: 45px;
   background-color: #0DC9AC;
@@ -342,16 +342,16 @@ footer .icon-box {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-footer .icon-box:hover {
+.footer .icon-box:hover {
   background-color: #616AF9;
   transition: all 0.3s ease;
 }
-footer .icon-box svg {
+.footer .icon-box svg {
   color: #FEFEFE;
   margin: 0;
 }
 @media (max-width: 768px) {
-  footer .icon-box svg {
+  .footer .icon-box svg {
     width: 20px;
     height: 20px;
   }
@@ -1433,7 +1433,7 @@ header .info-menu li:not(:last-child)::after {
   left: 0;
 }
 
-footer {
+.footer {
   font-family: "Lexend", sans-serif;
   background-image: url(/images/footer-bg.jpg);
   background-size: cover;
@@ -1445,7 +1445,7 @@ footer {
   overflow: hidden;
   padding: 4rem 0;
 }
-footer .footer-shape {
+.footer .footer-shape {
   position: absolute;
   top: 85px;
   right: 10%;
@@ -1464,67 +1464,67 @@ footer .footer-shape {
     transform: translateY(-50%) rotate(360deg);
   }
 }
-footer .overlay {
+.footer .overlay {
   background-color: rgba(2, 19, 39, 0.92);
   position: absolute;
   inset: 0;
   z-index: 0;
 }
-footer .container {
+.footer .container {
   position: relative;
   z-index: 1;
 }
 @media (max-width: 768px) {
-  footer strong {
+  .footer strong {
     font-size: 14px;
   }
 }
-footer p {
+.footer p {
   transition: all 0.5s ease;
   color: #DCDCDC;
   cursor: pointer;
 }
-footer p:hover {
+.footer p:hover {
   color: #616AF9;
 }
-footer p a {
+.footer p a {
   color: #DCDCDC;
   text-decoration: none;
   transition: color 0.5s ease;
 }
-footer p a:hover {
+.footer p a:hover {
   color: #616AF9;
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  footer p {
+  .footer p {
     font-size: 14px;
   }
 }
-footer .col-lg-3:last-child p:first-of-type {
+.footer .col-lg-3:last-child p:first-of-type {
   cursor: default;
 }
-footer .col-lg-3:last-child p:first-of-type:hover {
+.footer .col-lg-3:last-child p:first-of-type:hover {
   color: #DCDCDC;
 }
-footer svg {
+.footer svg {
   color: #0DC9AC;
   margin-right: 0.5rem;
 }
 @media (max-width: 768px) {
-  footer svg {
+  .footer svg {
     width: 18px;
     height: 18px;
     margin-right: 0.25rem;
   }
 }
-footer .footer-img {
+.footer .footer-img {
   width: 120px;
   height: 67px;
   object-fit: contain;
   display: block;
 }
-footer .icon-box {
+.footer .icon-box {
   width: 45px;
   height: 45px;
   background-color: #0DC9AC;
@@ -1534,17 +1534,32 @@ footer .icon-box {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-footer .icon-box:hover {
+.footer .icon-box:hover {
   background-color: #616AF9;
   transition: all 0.3s ease;
 }
-footer .icon-box svg {
+.footer .icon-box svg {
   color: #FEFEFE;
   margin: 0;
 }
 @media (max-width: 768px) {
-  footer .icon-box svg {
+  .footer .icon-box svg {
     width: 20px;
     height: 20px;
+  }
+}
+
+.footer-bottom {
+  font-family: "Lexend", sans-serif;
+}
+.footer-bottom p {
+  color: #DDDDDD;
+}
+.footer-bottom p span {
+  color: #0DC9AC;
+}
+@media (max-width: 768px) {
+  .footer-bottom p {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=main.css.map */

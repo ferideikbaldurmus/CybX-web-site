@@ -1,0 +1,15 @@
+.footer-bottom {
+    font-family: $global-font-family;
+
+    p {
+        color: #DDDDDD;
+
+        span {
+         color: $font-color-green;  
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+            
+        }
+    }
+}
