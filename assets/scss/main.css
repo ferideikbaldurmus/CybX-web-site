@@ -541,10 +541,9 @@ nav .navbar-actions .btn-get-started:hover::before {
 }
 
 .about-area {
-  background-color: #011327;
   display: flex;
   gap: 60px;
-  padding: 120px 0px;
+  padding: 120px 0;
 }
 .about-area .left-area {
   position: relative;
@@ -667,6 +666,201 @@ nav .navbar-actions .btn-get-started:hover::before {
   color: #616AF9;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+@media (max-width: 991px) {
+  .about-area .right-area {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+  .about-area .right-area .left-area {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .about-area .right-area .left-area img {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px;
+    left: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    z-index: auto !important;
+  }
+  .about-area .right-area .right-area {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0 15px;
+    width: 100%;
+    order: 2;
+  }
+  .about-area .right-area .right-area .left-area {
+    order: 1;
+  }
+}
+@media (max-width: 991px) {
+  .about-area {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+  }
+  .about-area .left-area {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    margin-bottom: 30px;
+  }
+  .about-area .left-area img {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto 20px auto;
+    display: block;
+    left: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    z-index: auto !important;
+  }
+  .about-area .right-area {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    padding: 0 10px;
+  }
+  .about-area .right-area .section-heading {
+    margin-left: 0 !important;
+  }
+  .about-area .right-area .section-heading p {
+    width: 100% !important;
+  }
+  .about-area .right-area .about-keypoints p {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 10px 15px;
+  }
+  .about-area .right-area .about-buttons .navbar-actions {
+    margin-left: 0 !important;
+    margin-top: 20px;
+  }
+  .about-area .right-area .about-buttons .call-button {
+    margin-top: 20px !important;
+    justify-content: flex-start !important;
+  }
+}
+@media (max-width: 575px) {
+  .about-area {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+  }
+  .about-area .left-area {
+    width: 100% !important;
+    height: auto !important;
+    position: relative;
+  }
+  .about-area .left-area img {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto 20px auto;
+    display: block;
+    left: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    z-index: auto !important;
+  }
+}
+@media (max-width: 991px) {
+  .about-area {
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+  .about-area .left-area {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .about-area .left-area img {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 20px;
+    left: auto !important;
+    bottom: auto !important;
+    top: auto !important;
+    z-index: auto !important;
+  }
+  .about-area .right-area {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0 15px;
+    width: 100%;
+    order: 2;
+  }
+  .about-area .right-area .about-keypoints p {
+    text-align: left !important;
+    width: 400px !important;
+    padding-left: 0 !important;
+    margin-left: -45px !important;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+  .about-area .right-area .about-keypoints p .circle {
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 991px) {
+  .about-area .about-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-area .about-buttons .navbar-actions {
+    width: 100%;
+  }
+  .about-area .about-buttons .navbar-actions .btn-get-started {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .about-area .about-buttons .call-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .about-area .about-buttons .call-button .call-svg {
+    width: 54px;
+    height: 54px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .about-area .about-buttons .call-button .call-svg svg {
+    stroke: #0dc9ac;
+    transition: stroke 0.3s ease;
+  }
+  .about-area .about-buttons .call-button .call-svg:hover {
+    background-color: #616AF9;
+  }
+  .about-area .about-buttons .call-button .call-svg:hover svg {
+    stroke: #fff;
+  }
+  .about-area .about-buttons .call-button .text-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-area .about-buttons .call-button .text-white p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+  }
 }
 
 .our-features {
