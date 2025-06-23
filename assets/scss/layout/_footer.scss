@@ -1,0 +1,130 @@
+footer {
+    font-family: $global-font-family;
+    background-image: url(/images/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 4rem 0;
+
+    .footer-shape {
+        position: absolute;
+        top: 85px;
+        right: 10%;
+        transform: translateY(-50%) rotate(45deg);
+        width: 100px;
+        height: auto;
+        pointer-events: none;
+        animation: spin 8s linear infinite;
+   color: #021327;
+    }
+    @keyframes spin{
+        0%{
+            transform: translateY(-50%) rotate(0deg);
+        }
+        100%{
+            transform: translateY(-50%) rotate(360deg);
+        }
+    }
+
+    .overlay {
+        background-color: rgba(2, 19, 39, 0.92);
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    strong {
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    p {
+        transition: all 0.5s ease;
+        color: #DCDCDC;
+        cursor: pointer;
+
+        &:hover {
+            color: $font-color-purple;
+        }
+
+        a {
+            color: #DCDCDC;
+            text-decoration: none;
+            transition: color 0.5s ease;
+
+            &:hover {
+                color: $font-color-purple;
+                text-decoration: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+
+
+    .col-lg-3:last-child p:first-of-type {
+        cursor: default;
+
+        &:hover {
+            color: #DCDCDC;
+        }
+    }
+
+    svg {
+        color: $font-color-green;
+        margin-right: 0.5rem;
+
+        @media (max-width: 768px) {
+            width: 18px;
+            height: 18px;
+            margin-right: 0.25rem;
+        }
+    }
+
+    .footer-img {
+        width: 120px;
+        height: 67px;
+        object-fit: contain;
+        display: block;
+    }
+
+    .icon-box {
+        width: 45px;
+        height: 45px;
+        background-color: $font-color-green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $font-color-purple;
+            transition: all 0.3s ease;
+        }
+
+        svg {
+            color: #FEFEFE;
+            margin: 0;
+
+            @media (max-width: 768px) {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+    }
+}

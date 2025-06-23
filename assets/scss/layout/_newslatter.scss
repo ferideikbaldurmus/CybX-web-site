@@ -37,7 +37,7 @@
             background-color: #F5F5F5;
 
             &:hover {
-                border: 2px solid $font-color-green;
+                border: 1.5px solid $font-color-green;
                 box-shadow: none;
             }
 
@@ -48,7 +48,7 @@
 
             &:focus {
                 outline: none;
-                border: 1px solid $font-color-green;
+                border: 1.5px solid $font-color-green;
                 box-shadow: none;
                 background-color: #F5F5F5;
             }
