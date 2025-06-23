@@ -173,24 +173,46 @@ nav .navbar-actions .btn-get-started:hover::before {
   width: 160px;
   height: 73px;
 }
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .hero .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero .container > div:first-child {
+    order: 1;
+    width: 100%;
+  }
+  .hero .container > div:last-child {
+    order: 2;
+    margin-top: 20px;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 .hero .play-button {
   position: relative;
-  background-color: #ffffff;
+  background-color: #fff;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-right: 100px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  overflow: visible;
+  z-index: 10;
 }
 .hero .play-button i {
   font-size: 45px;
   color: #0DC9AC;
+  z-index: 20;
   position: relative;
-  z-index: 2;
 }
 .hero .play-button::before {
   content: "";
@@ -204,7 +226,37 @@ nav .navbar-actions .btn-get-started:hover::before {
   transform: translate(-50%, -50%);
   opacity: 0.5;
   animation: pulseCircle 2s infinite ease-out;
-  z-index: 0;
+  z-index: 5;
+}
+@media (max-width: 992px) {
+  .hero .play-button {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+  }
+  .hero .play-button::before {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+  }
+  .hero .play-button i {
+    font-size: 30px !important;
+  }
+}
+@media (max-width: 576px) {
+  .hero .play-button {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+  }
+  .hero .play-button::before {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+  }
+  .hero .play-button i {
+    font-size: 20px !important;
+  }
 }
 @keyframes pulseCircle {
   0% {
@@ -281,6 +333,11 @@ nav .navbar-actions .btn-get-started:hover::before {
   }
   100% {
     transform: rotateX(-360deg);
+  }
+}
+@media (max-width: 992px) {
+  .hero .hero-background img {
+    display: none;
   }
 }
 
