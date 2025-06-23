@@ -1,0 +1,43 @@
+.scroll-to-top-wrapper {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.scroll-to-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(35px, 5vw, 40px);
+    height: clamp(35px, 5vw, 40px);
+    background-color: $font-color-green;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3 ease;
+    svg{
+        width: clamp(20px, 3vw, 25px);
+        height: clamp(20px, 3vw, 25px);
+        z-index: 2;
+        position: relative;
+    }
+&::before{
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $font-color-purple;
+    transition: bottom 0.3s ease;
+    z-index: 1;
+}
+    &:hover {
+        background-color: $font-color-green;
+     &::before{
+        bottom: 0;
+     }
+    }
+
+}
