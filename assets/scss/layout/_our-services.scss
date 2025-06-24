@@ -1,5 +1,6 @@
 .our-services {
     overflow-x: hidden;
+
     .our-services-title {
         h3 {
             color: $font-color-green;
@@ -154,6 +155,7 @@
                     align-items: center;
                     justify-content: center;
                     transition: all 0.3s ease;
+
                     svg {
                         width: 25px;
                         height: 25px;

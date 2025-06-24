@@ -39,14 +39,14 @@
             width: 240px;
             height: 240px;
             object-fit: contain;
-          }
-          
-          @media (min-width: 768px) {
+        }
+
+        @media (min-width: 768px) {
             .card-img-top {
-              width: 270px;
-              height: 270px;
+                width: 270px;
+                height: 270px;
             }
-          }
+        }
 
         h4 {
             color: #FFFFFF;

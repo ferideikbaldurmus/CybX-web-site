@@ -19,13 +19,15 @@
         height: auto;
         pointer-events: none;
         animation: spin 8s linear infinite;
-   color: #021327;
+        color: #021327;
     }
-    @keyframes spin{
-        0%{
+
+    @keyframes spin {
+        0% {
             transform: translateY(-50%) rotate(0deg);
         }
-        100%{
+
+        100% {
             transform: translateY(-50%) rotate(360deg);
         }
     }
@@ -72,8 +74,6 @@
             font-size: 14px;
         }
     }
-
-
 
     .col-lg-3:last-child p:first-of-type {
         cursor: default;
@@ -125,6 +125,5 @@
                 height: 20px;
             }
         }
-
     }
 }

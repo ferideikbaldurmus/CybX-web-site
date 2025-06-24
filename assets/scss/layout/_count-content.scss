@@ -1,12 +1,15 @@
 .count-content {
     font-family: $global-font-family;
-svg{
-    color: #F5F6F7;
-}
+
+    svg {
+        color: #F5F6F7;
+    }
+
     .container {
         background-color: #04182F;
-        padding: 1rem 1rem;    
+        padding: 1rem 1rem;
     }
+
     .logo {
         width: 70px;
         height: 70px;
@@ -21,13 +24,14 @@ svg{
     .count-text {
         color: #D5D5D6;
     }
+
     @media (max-width: 767.98px) {
-        padding-left: 1rem;  
+        padding-left: 1rem;
         padding-right: 1rem;
-      }
-    
-      @media (min-width: 768px) {
+    }
+
+    @media (min-width: 768px) {
         padding-left: 0;
         padding-right: 0;
-      }
+    }
 }

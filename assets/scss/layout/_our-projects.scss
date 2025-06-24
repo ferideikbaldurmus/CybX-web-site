@@ -80,26 +80,26 @@
 
 @media (max-width: 991px) {
     .our-projects {
-      .portfolio-content {
-        flex-direction: column;
-        gap: 20px;  
-      }
-      .slide {
-        width: 100% !important; 
-        flex-grow: 0;
-        flex-shrink: 0;
-        height: auto; 
-        min-height: 400px; 
-        transition: none; 
-      }
-      .slide .overlay {
-        opacity: 1 !important;
-        visibility: visible !important;
-        position: relative;
-        background-color: rgba(0,0,0,0.7);
-        padding: 20px;
-      }
+        .portfolio-content {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .slide {
+            width: 100% !important;
+            flex-grow: 0;
+            flex-shrink: 0;
+            height: auto;
+            min-height: 400px;
+            transition: none;
+        }
+
+        .slide .overlay {
+            opacity: 1 !important;
+            visibility: visible !important;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
     }
-  }
-  
- 
+}

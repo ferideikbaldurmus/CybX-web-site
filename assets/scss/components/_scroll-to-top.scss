@@ -16,28 +16,31 @@
     cursor: pointer;
     overflow: hidden;
     transition: all 0.3 ease;
-    svg{
+
+    svg {
         width: clamp(20px, 3vw, 25px);
         height: clamp(20px, 3vw, 25px);
         z-index: 2;
         position: relative;
     }
-&::before{
-    content: "";
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $font-color-purple;
-    transition: bottom 0.3s ease;
-    z-index: 1;
-}
-    &:hover {
-        background-color: $font-color-green;
-     &::before{
-        bottom: 0;
-     }
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $font-color-purple;
+        transition: bottom 0.3s ease;
+        z-index: 1;
     }
 
+    &:hover {
+        background-color: $font-color-green;
+
+        &::before {
+            bottom: 0;
+        }
+    }
 }

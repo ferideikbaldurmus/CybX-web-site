@@ -1,108 +1,110 @@
 .video-area {
-    position: relative;
-    height: 650px;
-    cursor: pointer;
-    img {
-        height: 650px;
-        object-fit: cover;
-        display: block;
+  position: relative;
+  height: 650px;
+  cursor: pointer;
 
-        @media (max-width: 767.98px) {
-            height: 350px;
-        }
+  img {
+    height: 650px;
+    object-fit: cover;
+    display: block;
+
+    @media (max-width: 767.98px) {
+      height: 350px;
+    }
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 120px;
+    height: 120px;
+    overflow: visible;
+    z-index: 3;
+
+    i {
+      font-size: 50px;
+      color: $font-color-green;
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.9);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: pulseCircle 2.5s infinite ease-out;
+      z-index: 0;
+    }
+
+  }
+
+  @media (max-width: 991.98px) {
+    height: 500px;
+
+    img {
+      height: 500px;
     }
 
     .play-button {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #ffffff;
-        width: 120px;
-        height: 120px;
-        overflow: visible;
-        z-index: 3;
+      width: 90px;
+      height: 90px;
 
-        i {
-            font-size: 50px;
-            color: $font-color-green;
-            position: relative;
-            z-index: 2;
-        }
+      i {
+        font-size: 40px;
+      }
 
-
-        &::before {
-            content: "";
-            position: absolute;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.9);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: pulseCircle 2.5s infinite ease-out;
-            z-index: 0;
-        }
-        
-    }
-    @media (max-width: 991.98px) {
-        height: 500px;
-      
-        img {
-          height: 500px;
-        }
-      
-        .play-button {
-          width: 90px;
-          height: 90px;
-      
-          i {
-            font-size: 40px;
-          }
-      
-          &::before {
-            width: 130px;
-            height: 130px;
-          }
-        }
-      }
-      
-      @media (max-width: 767.98px) {
-        height: 350px;
-      
-        img {
-          height: 350px;
-        }
-      
-        .play-button {
-          width: 70px;
-          height: 70px;
-      
-          i {
-            font-size: 32px;
-          }
-      
-          &::before {
-            width: 100px;
-            height: 100px;
-          }
-        }
-      }
-      
-    }
-    
-    @keyframes pulseCircle {
-      0% {
-        transform: translate(-50%, -50%) scale(1);
-        opacity: 0.4;
-      }
-      70% {
-        transform: translate(-50%, -50%) scale(2.2);
-        opacity: 0;
-      }
-      100% {
-        transform: translate(-50%, -50%) scale(2.2);
-        opacity: 0;
+      &::before {
+        width: 130px;
+        height: 130px;
       }
     }
+  }
+
+  @media (max-width: 767.98px) {
+    height: 350px;
+
+    img {
+      height: 350px;
+    }
+
+    .play-button {
+      width: 70px;
+      height: 70px;
+
+      i {
+        font-size: 32px;
+      }
+
+      &::before {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@keyframes pulseCircle {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.4;
+  }
+
+  70% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.2);
+    opacity: 0;
+  }
+}

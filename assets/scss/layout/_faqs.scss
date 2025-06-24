@@ -1,5 +1,6 @@
 .faqs {
     font-family: $global-font-family;
+
     .faqs-title {
         h5 {
             color: $font-color-green;
@@ -82,10 +83,11 @@
     }
 
     .accordion-body {
-        background-color: #04182E;  
+        background-color: #04182E;
         padding: 1rem 1.25rem;
         position: relative;
         font-size: 16px;
+
         &::after {
             content: "";
             position: absolute;
@@ -94,7 +96,7 @@
             width: 100%;
             height: 1px;
             background-color: #243851;
-          }
+        }
     }
 
     .accordion-item {
@@ -112,9 +114,9 @@
             height: 1px;
             background-color: #1B2A3B;
         }
+
         &.active::after {
             opacity: 0;
-          }
-        
+        }
     }
 }
